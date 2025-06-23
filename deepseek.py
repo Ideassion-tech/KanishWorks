@@ -1,12 +1,11 @@
 import requests
 from pydantic import BaseModel
 
-
 class UserInput(BaseModel):
     content: str
     
 def deepseek_ai(user_input: UserInput) -> str:
-    API_KEY = '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'  
+    API_KEY = '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'  
     url = "https://openrouter.ai/api/v1/chat/completions"
 
     headers = {
@@ -41,7 +40,4 @@ def deepseek_ai(user_input: UserInput) -> str:
 if __name__ == "__main__":
     user_input = input("Hi: ")
     response = deepseek_ai(user_input)
-    print(response)  # Print the response from DeepSeek AI
-
-
-    
+    print(response)

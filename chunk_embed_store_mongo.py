@@ -34,8 +34,3 @@ vector_store = MongoDBAtlasVectorSearch.from_documents(
     collection=collection, 
     index_name=mongo_det.index_name
 )
-
-
-
-
-
