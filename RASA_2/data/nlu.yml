@@ -1,0 +1,201 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
+
+  - intent: goodbye
+    examples: |
+      - cu
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
+
+  - intent: affirm
+    examples: |
+      - yes
+      - y
+      - indeed
+      - of course
+      - that sounds good
+      - correct
+
+  - intent: deny
+    examples: |
+      - no
+      - n
+      - never
+      - I don't think so
+      - don't like that
+      - no way
+      - not really
+
+  - intent: mood_great
+    examples: |
+      - perfect
+      - great
+      - amazing
+      - feeling like a king
+      - wonderful
+      - I am feeling very good
+      - I am great
+      - I am amazing
+      - I am going to save the world
+      - super stoked
+      - extremely good
+      - so so perfect
+      - so good
+      - so perfect
+
+  - intent: mood_unhappy
+    examples: |
+      - my day was horrible
+      - I am sad
+      - I don't feel very well
+      - I am disappointed
+      - super sad
+      - I'm so sad
+      - sad
+      - very sad
+      - unhappy
+      - not good
+      - not very good
+      - extremly sad
+      - so saad
+      - so sad
+
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
+
+  - intent: about_WT1 001CW
+    examples: |
+      -What is the SLAM PROOF lid feature on the [WT1001CW](model_name) washing machine?
+      - How do I use Cold Wash on the [WT1001CW](model_name) model?
+      - How does the SMART DIAGNOSIS function work on the [WT1001CW](model_name) washing machine?
+      - How can I enable the Water Plus option on the [WT1001CW](model_name?
+      - What are the child safety features available on the [WT1001CW](model_name)?
+      - How do I install the washing machine properly?
+      - How much detergent should I use per wash?
+      - How do I clean the drum using the tub clean cycle?
+      - What do I do if my washer is not draining?
+      - How can I reduce vibration during spin?
+      - What do the different cycle modes mean?
+      - How do I enable or disable the child lock?
+      - What does the error code “UE” or “OE” mean?
+      - Can I pause and add clothes after the cycle starts?
+      - How often should I clean the inlet filters?
+      - What is the purpose of the Smart Diagnosis feature?
+      - Why is my washing machine making loud noises?
+      - How do I remove lint or debris from the washer?
+      - Can I use bleach or fabric softener?
+      - What should I do before leaving the washer unused for a long time?
+
+  - intent: ask_supercar_info
+    examples: |
+      - What are supercars according to this document?
+      - How are supercars different from traditional cars?
+      - What is the drag-mass product and why is it important?
+      - What does the term “net-shape materials” mean in automotive design?
+      - What role do polymer composites play in car manufacturing?
+      - What are switched reluctance motors and why are they used in supercars?
+      - What are the advantages of using carbon fiber in vehicle construction?
+      - How can cars achieve less than 1.6 liters per 100 km fuel consumption?
+      - What is regenerative braking and how does it help improve fuel economy?
+      - What is the fuel efficiency potential of the Ultralite concept car?
+      - Can hybrid cars achieve 300 miles per gallon?
+      - What are the major factors that influence fuel economy in these vehicles?
+      - How do composite materials reduce car production costs?
+      - What does the Gaia concept car represent?
+      - How is the Ulha concept car different from Gaia?
+      - What are the societal benefits of switching to supercars?
+      - How do supercars compare to traditional electric vehicles?
+      - Are ultralight cars safe in crashes?
+      - What crash safety advantages do composite materials have?
+      - Why might ultralight cars need artificial sound systems?
+      - How can hybrid vehicles use fuel cells, flywheels, or ultracapacitors?
+      - What are the implications of manufacturing supercars using epoxy dies?
+      - What makes the Ultralite more efficient than a 1990s U.S. sedan?
+      - How do frontal area and drag coefficient affect energy use?
+      - What are the expected gains from replacing conventional cars with supercars?
+
+  - intent: ask_car_info
+    examples: |
+      - What are the specifications of the Subaru BRZ?
+      - Can you tell me the engine details of the Genesis G70?
+      - What’s the horsepower of the Toyota GR86?
+      - What kind of engine does the Lexus RX 350 have?
+      - How fast is the GR Supra?
+      - What is the 0–60 time for the Infiniti QX60?
+      - Does the Nissan Altima have a turbo engine?
+      - What features does the Nissan Kicks offer?
+      - Does the Lexus RX have a panoramic sunroof?
+      - Is wireless Apple CarPlay available in the GR Supra?
+      - Does the Subaru BRZ have a touchscreen display?
+      - What kind of audio system comes with the Genesis G70?
+      - Does the GR86 have a digital gauge cluster?
+      - What safety features are included in the Subaru BRZ?
+      - Is lane keeping assist available in the Lexus RX?
+      - Does the Infiniti QX60 have adaptive cruise control?
+      - How many airbags are in the Toyota GR86?
+      - What is Toyota’s Pre-Collision Braking System?
+      - Is the GR Supra rear-wheel drive?
+      - Does the Subaru BRZ come in manual transmission?
+      - Can I drive the Genesis G70 in Sport+ mode?
+      - Does the Nissan Altima offer AWD?
+      - What’s the handling like on the Toyota GR86?
+      - What colors are available for the Lexus RX?
+      - What makes the GR Supra A91 special edition unique?
+      - Are there any special trims for the Infiniti QX60?
+      - Is there a convertible version of the Nissan Kicks?
+      - What’s the interior like in the Subaru BRZ?
+      - What is included in ToyotaCare for the GR86?
+      - Does the Genesis G70 come with a maintenance plan?
+      - What is the Lexus RX warranty coverage?
+      - Is there roadside assistance for the Nissan Altima?
+      - Which is better — GR86 or BRZ?
+      - Is the Infiniti QX60 a good family SUV?
+      - Should I buy the GR Supra or the Lexus RX?
+      - What’s the difference between the RX 350 and RX 500h?
+      - What is the difference between the GR86 and the Subaru BRZ?
+      - GR Supra vs Lexus RX – which is better for performance?
+      - How is the Nissan Altima different from the Nissan Kicks?
+      - Compare the Genesis G70 and Lexus RX.
+      - Which is faster, the GR Supra or the GR86?
+      - Tell me the difference between the RX 350 and RX 500h.
+      - Is the Subaru BRZ better than the Toyota GR86?
+      - What’s the difference between the Infiniti QX60 and Lexus RX?
+      - Which has better mileage, the Altima or the Kicks?
+      - How do the infotainment systems compare in the Genesis G70 and GR Supra?
+      - Is the GR Supra more powerful than the BRZ?
+      - Between Altima and QX60, which has more cargo space?
+      - Which car is better for long drives, the Lexus RX or Nissan Kicks?
+      - Is the GR86 more track-focused than the Supra?
+      - Which one has more safety features – Genesis G70 or Infiniti QX60?
+      - Compare interior design of the BRZ and GR86.
+      - Between the RX 350 and RX 500h, which one has better acceleration?
+      - Is the Genesis G70 more luxurious than the Altima?
+      - Which one is sportier, the BRZ or the GR Supra?
+      - Which car offers better tech features, Lexus RX or Infiniti QX60?

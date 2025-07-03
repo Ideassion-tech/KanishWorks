@@ -5,7 +5,7 @@ class UserInput(BaseModel):
     content: str
     
 def llama_ai(user_input: UserInput) -> str:
-    API_KEY = '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'  
+    API_KEY = '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'  
     url = "https://openrouter.ai/api/v1/chat/completions"
 
     headers = {

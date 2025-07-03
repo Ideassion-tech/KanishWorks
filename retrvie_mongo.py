@@ -18,7 +18,7 @@ vector_store = MongoDBAtlasVectorSearch(
     index_name=mongo_det.index_name
 )
 
-query = "what are supercars"    
+query = "are ultralight cars safe in crashes"    
 k=3
 docs = vector_store.max_marginal_relevance_search(query, K=k)
 model= SentenceTransformer("BAAI/bge-base-en")
